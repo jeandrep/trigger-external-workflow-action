@@ -10,6 +10,9 @@ inputs:
   github_pat:
     description: 'GitHub Personal Access Token (PAT) with enough permissions to trigger the desired workflow'
     required: true
+  github_server:
+    description: 'GitHub API Server to use'
+    required: true
 runs:
   using: 'docker'
-  image: 'docker://passeidireto/trigger-external-workflow-action'
+  image: 'docker://jeandrep/trigger-external-workflow-action'
